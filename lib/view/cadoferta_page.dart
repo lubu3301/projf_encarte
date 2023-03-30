@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class PromocoesPage extends StatelessWidget {
-  const PromocoesPage({super.key});
+class CadOferta extends StatelessWidget {
+  const CadOferta({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +16,10 @@ class PromocoesPage extends StatelessWidget {
           ),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        
         children: const [
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(left: 40, right: 40, top: 40, bottom: 25),
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
@@ -27,19 +27,19 @@ class PromocoesPage extends StatelessWidget {
               ),
             ),
           ),
-
+      
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(left: 150, right: 150, bottom: 25),
             child: TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                label: Text('Preço'),
+                label: Text('Preço R\$'),
               ),
             ),
           ),
-
+      
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(left: 130, right: 130, bottom: 25),
             child: TextField(              
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
@@ -47,18 +47,19 @@ class PromocoesPage extends StatelessWidget {
               ),
             ),
           ),
-
+      
           Padding(
-            padding: EdgeInsets.all(8.0),
-            child: SizedBox(
+            padding: EdgeInsets.only(left: 40, right: 40, bottom: 25, top: 40),
+            child: SizedBox(                                                                       
               width: double.infinity,
               height: 100,
-              child: Text('Em breve'),
+              child: Text(
+                'Imagem em breve'),
             ),
           ),
-
+      
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.only(left: 100, right: 100, ),
             child: SizedBox(
               width: double.infinity,
               height: 40,
@@ -68,7 +69,7 @@ class PromocoesPage extends StatelessWidget {
               ),
             ),
           ),
-
+      
         ],
       ),
     );

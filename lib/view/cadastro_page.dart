@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projf_encarte/src/view/cadestabelecimento_page.dart';
+import 'package:projf_encarte/view/cadestabelecimento_page.dart';
 import 'cadcliente_page.dart';
 
 class Cadastro extends StatelessWidget {

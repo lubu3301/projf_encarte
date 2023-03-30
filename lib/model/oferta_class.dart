@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+
 
 class Oferta {
   String descricao;

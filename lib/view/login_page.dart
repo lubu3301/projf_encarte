@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projf_encarte/view/cadoferta_page.dart';
 import 'cadastro_page.dart';
 
 class Login extends StatelessWidget{
@@ -56,12 +57,18 @@ class Login extends StatelessWidget{
                 height: 40,
               ),
 
-              const SizedBox(
+               SizedBox(
                 width: 250,
                 height: 50,
                 child: ElevatedButton(
-                  onPressed: null,
-                   child: Text("Entrar",
+                  onPressed: () {
+                    Navigator.push(context,
+                      MaterialPageRoute(
+                        builder: (context) => const CadOferta()
+                      ),
+                    );
+                  },
+                   child: const Text("Entrar",
                    style: TextStyle(fontSize: 20)
                   ),
                 ),
@@ -74,7 +81,9 @@ class Login extends StatelessWidget{
               TextButton(
                 onPressed: () {
                   Navigator.push(context,
-                   MaterialPageRoute(builder: (context) => const Cadastro()),
+                    MaterialPageRoute(
+                    builder: (context) => const Cadastro()
+                    ),
                   );
                 },
                  child: const Text("Cadastre-se",
