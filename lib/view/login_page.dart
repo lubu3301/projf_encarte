@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:projf_encarte/view/cadoferta_page.dart';
+import 'package:projf_encarte/view/lista_page.dart';
 import 'cadastro_page.dart';
 
 class Login extends StatelessWidget{
@@ -64,7 +64,7 @@ class Login extends StatelessWidget{
                   onPressed: () {
                     Navigator.push(context,
                       MaterialPageRoute(
-                        builder: (context) => const CadOferta()
+                        builder: (context) => ListaOfertas()
                       ),
                     );
                   },

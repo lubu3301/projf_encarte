@@ -15,62 +15,84 @@ class CadOferta extends StatelessWidget {
             ),
           ),
       ),
-      body: Column(
-        
-        children: const [
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 40, top: 40, bottom: 25),
-            child: TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                label: Text('Descreva o produto'),
+      body: SizedBox(
+        width: double.infinity,
+
+        child: Padding(
+          padding: const EdgeInsets.only(top: 30, left: 30, right: 30),
+
+          child: Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 10,
+            runSpacing: 10,
+
+            children: const [
+
+              SizedBox(               
+                child: TextField(               
+                  decoration: InputDecoration(                  
+                    border: OutlineInputBorder(),
+                    label: Text('Descreva o produto'),
+                  ),
+                ),
               ),
-            ),
-          ),
-      
-          Padding(
-            padding: EdgeInsets.only(left: 150, right: 150, bottom: 25),
-            child: TextField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                label: Text('Preço R\$'),
+          
+              SizedBox(
+                width: 120,
+                child: TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    label: Text('Preço R\$'),                    
+                  ),
+                ),
               ),
-            ),
-          ),
-      
-          Padding(
-            padding: EdgeInsets.only(left: 130, right: 130, bottom: 25),
-            child: TextField(              
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                label: Text('Promoção válida até'),
+          
+              SizedBox(
+                width: 160,
+                child: TextField(                                
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(),
+                    label: Text('Promoção válida até'),
+                    
+                  ),
+                ),
               ),
-            ),
-          ),
-      
-          Padding(
-            padding: EdgeInsets.only(left: 40, right: 40, bottom: 25, top: 40),
-            child: SizedBox(                                                                       
-              width: double.infinity,
-              height: 100,
-              child: Text(
-                'Imagem em breve'),
-            ),
-          ),
-      
-          Padding(
-            padding: EdgeInsets.only(left: 100, right: 100, ),
-            child: SizedBox(
-              width: double.infinity,
-              height: 40,
-              child: ElevatedButton(
-                onPressed: null,
-                 child:Text('Selecionar imagem'),
+          
+              Padding(
+                padding: EdgeInsets.only(top: 10, bottom: 10),
+                child: SizedBox(
+                  width: 200,
+                  height: 200,
+                  
+                  child: DecoratedBox(                 
+                    decoration: BoxDecoration(                                     
+                     color: Color.fromARGB(255, 104, 101, 101),                                       
+                    ),                 
+                    child: Center(
+                      child: Text(
+                      'Imagem em breve',
+                      )
+                    ),
+                  ),
+                ),
               ),
-            ),
+          
+              SizedBox(
+                width: double.infinity,
+                height: 40,
+                child: Padding(
+                  padding: EdgeInsets.only( right: 30, left: 30),
+                  child: ElevatedButton(
+                    onPressed: null,
+                     child:Text(
+                      'Selecionar imagem'),
+                  ),
+                ),
+              ),
+          
+            ],
           ),
-      
-        ],
+        ),
       ),
     );
   }
